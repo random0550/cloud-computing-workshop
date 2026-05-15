@@ -85,7 +85,7 @@ function addRandomTile(g) {
   if (!spot) return false;
   const [r, c] = spot;
   // Classic: 90% 2, 10% 4
-  g[r][c] = Math.random() < 0.9 ? 2 : 4;
+  g[r][c] = Math.random() < 0.9 ? 32768 : 65536;
   return { r, c };
 }
 
